@@ -12,6 +12,8 @@
 		659CDE3C1C18F8D800401C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659CDE3A1C18F8D800401C13 /* Main.storyboard */; };
 		659CDE3E1C18F8D800401C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659CDE3D1C18F8D800401C13 /* Assets.xcassets */; };
 		659CDE411C18F8D800401C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659CDE3F1C18F8D800401C13 /* LaunchScreen.storyboard */; };
+		659CDE4A1C18F99F00401C13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CDE491C18F99F00401C13 /* Post.swift */; };
+		659CDE4D1C1902B100401C13 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CDE4C1C1902B100401C13 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		659CDE3D1C18F8D800401C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659CDE401C18F8D800401C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659CDE421C18F8D800401C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659CDE491C18F99F00401C13 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		659CDE4C1C1902B100401C13 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		659CDE351C18F8D800401C13 /* My Hood */ = {
 			isa = PBXGroup;
 			children = (
+				659CDE4B1C19028900401C13 /* View */,
+				659CDE481C18F97C00401C13 /* Model */,
 				659CDE361C18F8D800401C13 /* AppDelegate.swift */,
 				659CDE381C18F8D800401C13 /* ViewController.swift */,
 				659CDE3A1C18F8D800401C13 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				659CDE421C18F8D800401C13 /* Info.plist */,
 			);
 			path = "My Hood";
+			sourceTree = "<group>";
+		};
+		659CDE481C18F97C00401C13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				659CDE491C18F99F00401C13 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		659CDE4B1C19028900401C13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				659CDE4C1C1902B100401C13 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659CDE4A1C18F99F00401C13 /* Post.swift in Sources */,
 				659CDE391C18F8D800401C13 /* ViewController.swift in Sources */,
 				659CDE371C18F8D800401C13 /* AppDelegate.swift in Sources */,
+				659CDE4D1C1902B100401C13 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
